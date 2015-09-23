@@ -4,13 +4,13 @@
       "Rafael Kitover <rkitover@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.008, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Dist::Zilla version 5.039, CPAN::Meta::Converter version 2.150001",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Catalyst-Plugin-SmartURI",
    "no_index" : {
@@ -21,7 +21,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "develop" : {
@@ -54,7 +54,11 @@
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
             "Test::More" : "0",
+            "Test::Warnings" : "0",
+            "Time::HiRes" : "0",
+            "Time::Out" : "0",
             "URI::SmartURI" : "0",
+            "blib" : "1.01",
             "lib" : "0",
             "parent" : "0",
             "strict" : "0",
@@ -78,7 +82,7 @@
          "web" : "http://github.com/rkitover/catalyst-plugin-smarturi"
       }
    },
-   "version" : "0.039",
+   "version" : "0.040",
    "x_authority" : "cpan:RKITOVER"
 }
 

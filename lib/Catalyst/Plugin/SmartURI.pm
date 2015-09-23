@@ -1,11 +1,6 @@
 package Catalyst::Plugin::SmartURI;
-BEGIN {
-  $Catalyst::Plugin::SmartURI::AUTHORITY = 'cpan:RKITOVER';
-}
-{
-  $Catalyst::Plugin::SmartURI::VERSION = '0.039';
-}
-
+our $AUTHORITY = 'cpan:RKITOVER';
+$Catalyst::Plugin::SmartURI::VERSION = '0.040';
 use Moose;
 use mro 'c3';
 
@@ -169,13 +164,9 @@ sub uri_for {
 
 {
     package Catalyst::Request::SmartURI;
-BEGIN {
-  $Catalyst::Request::SmartURI::AUTHORITY = 'cpan:RKITOVER';
-}
-{
-  $Catalyst::Request::SmartURI::VERSION = '0.039';
-}
-    use Moose;
+our $AUTHORITY = 'cpan:RKITOVER';
+$Catalyst::Request::SmartURI::VERSION = '0.040';
+use Moose;
     extends 'Catalyst::Request';
     use namespace::clean -except => 'meta';
 
@@ -189,6 +180,10 @@ BEGIN {
         my $req = shift;
 
         my $uri_class = $context ? $context->uri_class : $conf_uri_class;
+
+        my $uri = $req->next::method(@_);
+
+        return $uri if not defined $uri;
 
         $req->next::method(
             $uri_class->new(
