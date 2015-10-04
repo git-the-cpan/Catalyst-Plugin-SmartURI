@@ -49,5 +49,5 @@ resources:
   homepage: http://metacpan.org/release/Catalyst-Plugin-SmartURI
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rkitover/catalyst-plugin-smarturi.git
-version: '0.040'
+version: '0.041'
 x_authority: cpan:RKITOVER

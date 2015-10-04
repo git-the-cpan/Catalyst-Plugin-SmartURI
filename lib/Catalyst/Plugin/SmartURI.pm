@@ -1,6 +1,6 @@
 package Catalyst::Plugin::SmartURI;
 our $AUTHORITY = 'cpan:RKITOVER';
-$Catalyst::Plugin::SmartURI::VERSION = '0.040';
+$Catalyst::Plugin::SmartURI::VERSION = '0.041';
 use Moose;
 use mro 'c3';
 
@@ -165,7 +165,7 @@ sub uri_for {
 {
     package Catalyst::Request::SmartURI;
 our $AUTHORITY = 'cpan:RKITOVER';
-$Catalyst::Request::SmartURI::VERSION = '0.040';
+$Catalyst::Request::SmartURI::VERSION = '0.041';
 use Moose;
     extends 'Catalyst::Request';
     use namespace::clean -except => 'meta';
